@@ -1,0 +1,22 @@
+{
+  "name": "dashboard",
+  "version": "1.0.0",
+  "description": "personal dashboard",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/variabledotinc/dashboard.git"
+  },
+  "author": "variable",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/variabledotinc/dashboard/issues"
+  },
+  "homepage": "https://github.com/variabledotinc/dashboard#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.8.1"
+  }
+}
