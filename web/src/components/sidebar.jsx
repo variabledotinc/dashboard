@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import {withRouter} from 'react-router-dom'
-import {Wrapper, List} from '../ui/Layout.jsx'
+import {Wrapper, List} from '../ui/layout'
 import styled from 'styled-components'
 
 import Home from '../../assets/icon_home.svg'
@@ -35,9 +35,8 @@ const Title = styled.div`
 class Sidebar extends Component{
     render(){
         const {history} = this.props
-
+        console.log(history)
         const dashMenuItem = ({data}) => {
-            console.log(this.props.location)
             return (
                 <div className={this.props.location.pathname === data.path ? "active" : ""} onClick={()=>history.push(data.path)}>
                     {data.img ? <img src={data.img}/> : ""} {data.value}

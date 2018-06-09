@@ -1,29 +1,23 @@
 import React from 'react'
 import {render} from 'react-dom'
-import firebase from 'firebase/app'
 import { BrowserRouter } from "react-router-dom";
+import { Provider } from "mobx-react";
 
 import App from './src/App.jsx'
+import AppState from './store/appState.js'
 
 
-const firebaseConfigs = {
-    apiKey: "AIzaSyDDEDhYZIjUgO-ZHeGS2EXEibz7wGVMjfw",
-    authDomain: "dashboard-a2670.firebaseapp.com",
-    databaseURL: "https://dashboard-a2670.firebaseio.com",
-    projectId: "dashboard-a2670",
-    storageBucket: "dashboard-a2670.appspot.com",
-    messagingSenderId: "879652396502"
-
-}
 
 const Variable = () => (
-    <BrowserRouter>
-        <App/>
-    </BrowserRouter>
+    <Provider appState={AppState} >
+        <BrowserRouter>
+            <App getTasks={AppState.getTasks}/>
+        </BrowserRouter>
+    </Provider>    
     )
 
 
-firebase.initializeApp(firebaseConfigs)
+
 
 
 
