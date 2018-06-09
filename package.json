@@ -15,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/variabledotinc/dashboard/issues"
   },
-  "homepage": "https://github.com/variabledotinc/dashboard#readme",
+  "homepage": "https://variabledotcom.github.io/dashboard",
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-plugin-transform-class-properties": "^6.24.1",
